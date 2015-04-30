@@ -10,20 +10,20 @@ Perl Script to download Economic Times magazine as pdf for offline viewing
 
 ## Details
 
-     Economic Times provides Regular Newspaper on all days
-     following by additional magazine on certain days
+Economic Times provides Regular Newspaper on all days
+following by additional magazine on certain days
 
      Monday     - ET Wealth
      Wednesday  - Brand Equity
      Thursday   - ET Travel , Panache
      Friday     - Corporate Dossier
 
-   This script helps to download either news paper or magazine or both
+   >>> This script helps to download either news paper or magazine or both from www.economictimes.indiatimes.com
  
-   Passing No Arguments will download current days magazine if present
+   >>> Passing No Arguments will download current days magazine if present
 
-   Passing 1 argument - R  -- Will download current days news paper
-   Passing 1 argument - A  -- Will download current days magazine and news paper
-   Passing 1 argument - M  -- Will download current days magazine only
+   >>> Passing 1 argument - R  -- Will download current days news paper
+   >>> Passing 1 argument - A  -- Will download current days magazine and news paper
+   >>> Passing 1 argument - M  -- Will download current days magazine only
 
-   Passing 2 argument - R/M/A YYYYMMDD will download particular days paper/magazine/both 
+   >>> Passing 2 argument - R/M/A YYYYMMDD will download particular days paper/magazine/both 
