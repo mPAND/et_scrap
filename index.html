@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Economic Times Scrapper by mPAND</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Economic Times Scrapper</h1>
+        <p>Perl Script to download Economic Times ePaper as pdf for offline viewing</p>
+
+        <p class="view"><a href="https://github.com/mPAND/et_scrap">View the Project on GitHub <small>mPAND/et_scrap</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mPAND/et_scrap/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mPAND/et_scrap/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mPAND/et_scrap">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="economic-times-news-paper-scrapper" class="anchor" href="#economic-times-news-paper-scrapper" aria-hidden="true"><span class="octicon octicon-link"></span></a>Economic Times News Paper Scrapper</h1>
+
+<p>Perl Script to download Economic Times Newspaper as pdf for offline viewing</p>
+
+<h2>
+<a id="syntax" class="anchor" href="#syntax" aria-hidden="true"><span class="octicon octicon-link"></span></a>Syntax</h2>
+
+<pre><code>&gt;&gt;&gt; perl economictimes_download.pl [R/M/A] [YYYYMMDD]
+
+ where R - Regular News Paper
+       M - Supplement Magazine
+       A - All ( Regular + Supplement)
+YYYYMMDD - Particular day's new paper
+
+Passing No Arguments will download current days magazine if present
+Passing - R  -- Will download current days news paper
+Passing - A  -- Will download current days magazine and news paper
+Passing - M  -- Will download current days magazine only
+Passing - R 20150401  -- Will download Apr 1st 2015's regular news paper
+</code></pre>
+
+<h2>
+<a id="details" class="anchor" href="#details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Details</h2>
+
+<p>Economic Times provides regular business News on all days followed by additional magazine on certain days of week.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Day of Week</th>
+<th align="left">Magazine name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Monday</td>
+<td align="left">ET Wealth</td>
+</tr>
+<tr>
+<td align="left">Wednesday</td>
+<td align="left">Brand Equity</td>
+</tr>
+<tr>
+<td align="left">Thursday</td>
+<td align="left">ET Travel , Panache</td>
+</tr>
+<tr>
+<td align="left">Friday</td>
+<td align="left">Corporate Dossier</td>
+</tr>
+</tbody>
+</table>
+
+<p>This script helps to download either news paper or magazine or both from <a href="http://www.economictimes.indiatimes.com">www.economictimes.indiatimes.com</a></p>
+
+<p>Happy Reading !!</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mPAND">mPAND</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
