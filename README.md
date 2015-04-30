@@ -3,7 +3,7 @@
 Perl Script to download Economic Times Newspaper as pdf for offline viewing
 
 ## Syntax
-    >>> perl economictimes_scrap.pl [R/M/A] [YYYYMMDD]
+    >>> perl economictimes_download.pl [R/M/A] [YYYYMMDD]
      where R - Regular News Paper
            M - Supplement Magazine
            A - All ( Regular + Supplement)
