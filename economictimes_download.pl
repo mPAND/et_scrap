@@ -1,11 +1,11 @@
 ##############################################################################
 ##
-## Name    : 01_et_scrap.pl
+## Name    : economictimes_download.pl
 ##
 ## Purpose : To download Economic Times News Paper as PDF
 ##           for offline reading
 ##  
-## Syntax  : perl 01_et_scrap.pl [R/M/A] [YYYYMMDD]
+## Syntax  : perl economictimes_download.pl  [R/M/A] [YYYYMMDD]
 ## 
 ##           where R - Regular News Paper
 ##                 M - Supplement Magazine
