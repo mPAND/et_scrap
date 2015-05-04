@@ -72,8 +72,9 @@ my $dt_dd_mm_YYYY = strftime "%d_%m_%Y", localtime($dt);
 my $dt_tp = localtime($dt);
 
 my $flag =1;
+my $try_times=0;
 
-while ($flag >0)
+while ($flag >0 or $try_times < 2)
 {
 my $counter_fmt = sprintf( "%03d",$counter);	
 my $url_reg_jpg = $url_static.$dt_YYYY_MM_DD."/Page/".$dt_dd_mm_YYYY."_".$counter_fmt.".jpg";
@@ -91,10 +92,14 @@ if ( defined($doc_header[0]) ){
 		getstore($url_reg_pdf,$file_name_pdf);
 		$counter++;
 		$downloaded++;
+		$flag=1;
+		$try_times=0;
 	    }
     }    
     else {
           $flag=0;
+          $try_times++;
+          $counter++;
         }
    }
 return $downloaded; 
@@ -105,6 +110,7 @@ my $dt_ts = localtime($dt_epoch);
 #
 # Notes days_of_week explained
 # - 0 - sunday
+
 # - 1 - monday
 # - 2 - tue
 # - 3 - wed
